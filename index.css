@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(62, 84, 209);
+}
+
+/* Customize your styles here */
+
+/* Hero Section */
+.hero-section {
+    background: url('hero2.jpg') center/cover no-repeat;
+    color: #f1fbff;
+    text-align: center;
+    padding: 10em 0;
+}
+
+
+/* About Me Section */
+.about-me-section {
+    background-color:rgb(233, 241, 252);
+    padding: 5% 3%;
+    color: rgb(5, 29, 63);
+}
+
+.skills-section {
+    background-color: #343a40;
+    color: #fff;
+    padding: 80px 0;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #0c2b49;
+    padding: 10% 10%;
+    color: rgb(231, 234, 241);
+}
+
+.badge-bolder {
+    font-family:monospace;
+    font-weight:bold;
+    font-size: 1.2rem;
+    margin: 5px;
+}
