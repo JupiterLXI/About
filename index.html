@@ -18,9 +18,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#hero">Home</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Top</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -60,34 +60,46 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skill-section">
         <div class="container">
-            <h2 class="display-4 mb-4">Skills</h2>
-            <!-- Add your skills with a bolder design using the badge-bolder class -->
+            <h2 class="display-4 mb-4 text-center">Skills</h2>
+
+            <!-- Card-based Design -->
             <div class="row">
-                <div class="col-sm-3 text-center">
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">Python</span>
-                    <br>
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">Django</span>
+                <!-- Frontend Skills Card -->
+                <div class="col-md-6 mb-4 bg-transparent">
+                    <div class="card frontend">
+                        <div class="card-body">
+                            <h4 class="card-title text-center mb-4 fw-bold">Frontend</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">HTML | CSS</li>
+                                <li class="list-group-item bg-transparent">JavaScript</li>
+                                <li class="list-group-item bg-transparent">React</li>
+                                <li class="list-group-item bg-transparent">Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">HTML/CSS</span>
-                    <br>
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">Bootstrap</span>
+
+                <!-- Backend Skills Card -->
+                <div class="col-md-6 mb-4 bg-transparent">
+                    <div class="card backend">
+                        <div class="card-body text-light">
+                            <h4 class="card-title text-center mb-4 fw-bold">Backend</h4>
+                            <ul class=" list-group list-group-flush">
+                                <li class="list-group-item text-light bg-transparent">Python</li>
+                                <li class="list-group-item text-light bg-transparent pt-2">Django</li>
+                                <li class="list-group-item text-light bg-transparent">PostgreSQL</li>
+                                <li class="list-group-item text-light bg-transparent">RESTful API | DRF</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3 text-center">
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">JavaScript</span>
-                    <br>
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">React</span>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">SQL</span>
-                    <br>
-                    <span class="badge badge-bolder bg-dark p-2 rounded-2">PostgreSQL</span>
-                </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
     <!-- <section id="projects" class="projects-section"> -->
@@ -100,9 +112,13 @@
     <!-- Contact Section -->
     <footer id="contact" class="contact-section">
         <div class="container">
-            <h2 class="display-4">Contact</h2>
-            <p class="lead">Feel free to reach out to me through the following channels:</p>
-    
+            <p class="">
+                <h2 class="display-4" style="line-height: 95%;">Contact</h2>
+                <span class="subt">
+                    Feel free to reach out to me through the following channels:
+                </span>
+            </p>
+            <hr class="mb-4">
             <!-- Contact Information -->
             <div class="row">
                 <!-- Phone -->
@@ -165,10 +181,21 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JavaScript and dependencies -->
+    <!-- Bootstrap, JavaScript & dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/c5a930c207.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        document.addEventListener('click', function (event) {
+            var clickover = event.target;
+            var navbar = document.querySelector('.navbar-collapse');
+            var isOpened = navbar.classList.contains('show');
+
+            if (isOpened && !clickover.classList.contains('navbar-toggler')) {
+                navbar.classList.remove('show');
+            }
+        });
+    </script>
+</body>
 </html>
