@@ -12,22 +12,28 @@ a {
 /* Hero Section */
 .hero-section {
     background: url('hero2.jpg') center/cover no-repeat;
-    color: #f1fbff;
+    color: rgb(243, 247, 255);
     text-align: center;
     padding: 10em 0;
 }
 
+/* Profile Image */
+.profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+}
 
 /* About Me Section */
 .about-me-section {
-    background-color:rgb(233, 241, 252);
+    background: linear-gradient(to bottom, rgb(243, 247, 255) 30%, #f8fcff);
+    background-color:rgb(243, 247, 255);
     padding: 5% 3%;
     color: rgb(5, 29, 63);
 }
 
 .skills-section {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #4a5b6c;
+    color: #eff0f5;
     padding: 80px 0;
 }
 
