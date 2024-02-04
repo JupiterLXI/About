@@ -59,46 +59,53 @@
     </section>
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="skill-section">
-        <div class="container">
-            <h2 class="display-4 mb-4 text-center">Skills</h2>
-
-            <!-- Card-based Design -->
-            <div class="row">
-                <!-- Frontend Skills Card -->
-                <div class="col-md-6 mb-4 bg-transparent">
-                    <div class="card frontend">
-                        <div class="card-body">
-                            <h4 class="card-title text-center mb-4 fw-bold">Frontend</h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent">HTML | CSS</li>
-                                <li class="list-group-item bg-transparent">JavaScript</li>
-                                <li class="list-group-item bg-transparent">React</li>
-                                <li class="list-group-item bg-transparent">Bootstrap</li>
-                            </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="skill-section">
+            <div class="containe-fluid">
+                <div class="row">
+                    <!-- Center the Skills header on large screens -->
+                    <div class="col-lg-4 d-flex text-center align-items-center justify-content-between skills-header">
+                        <h2 class="display-4 mb-4 text-center d-flex">Skills</h2>
+                    </div>
+        
+                    <!-- Card-based Design -->
+                    <!-- Frontend Skills Card -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 bg-transparent">
+                                <div class="card frontend">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-center mb-4 fw-bold">Frontend</h4>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-transparent">HTML | CSS</li>
+                                            <li class="list-group-item bg-transparent">JavaScript</li>
+                                            <li class="list-group-item bg-transparent">React</li>
+                                            <li class="list-group-item bg-transparent">Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Backend Skills Card -->
+                            <div class="col-md-6 mb-4 bg-transparent">
+                                <div class="card backend">
+                                    <div class="card-body text-light">
+                                        <h4 class="card-title text-center mb-4 fw-bold">Backend</h4>
+                                        <ul class=" list-group list-group-flush">
+                                            <li class="list-group-item text-light bg-transparent">Python</li>
+                                            <li class="list-group-item text-light bg-transparent pt-2">Django</li>
+                                            <li class="list-group-item text-light bg-transparent">PostgreSQL</li>
+                                            <li class="list-group-item text-light bg-transparent">RESTful API | DRF</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Backend Skills Card -->
-                <div class="col-md-6 mb-4 bg-transparent">
-                    <div class="card backend">
-                        <div class="card-body text-light">
-                            <h4 class="card-title text-center mb-4 fw-bold">Backend</h4>
-                            <ul class=" list-group list-group-flush">
-                                <li class="list-group-item text-light bg-transparent">Python</li>
-                                <li class="list-group-item text-light bg-transparent pt-2">Django</li>
-                                <li class="list-group-item text-light bg-transparent">PostgreSQL</li>
-                                <li class="list-group-item text-light bg-transparent">RESTful API | DRF</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
 
     <!-- Projects Section -->
@@ -110,8 +117,8 @@
     <!-- </section> -->
 
     <!-- Contact Section -->
-    <footer id="contact" class="contact-section">
-        <div class="container">
+    <footer id="contact" class="ftr">
+        <div class="container contact-section">
             <p class="">
                 <h2 class="display-4" style="line-height: 95%;">Contact</h2>
                 <span class="subt">
@@ -122,7 +129,7 @@
             <!-- Contact Information -->
             <div class="row">
                 <!-- Phone -->
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 col-md-12 mb-4">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-phone-alt me-3"></i>
                         <div>
@@ -133,7 +140,7 @@
                 </div>
     
                 <!-- Email -->
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-envelope me-3"></i>
                         <div>
@@ -144,7 +151,7 @@
                 </div>
     
                 <!-- GitHub -->
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="d-flex align-items-center">
                         <i class="fab fa-github me-3"></i>
                         <div>

@@ -25,7 +25,7 @@ a {
 
 /* About Me Section */
 .about-me-section {
-    background: linear-gradient(to top, rgb(243, 247, 255) 75%, #3F79B8);
+    background: linear-gradient(to top, rgb(243, 247, 255) 50%, #3F79B8);
     background-color:rgb(243, 247, 255);
     padding: 5% 3%;
     color: rgb(5, 29, 63);
@@ -56,10 +56,31 @@ a {
 }
 
 /* Contact Section */
-.contact-section {
+/* .contact-section {
     background-color: #0c2b49;
     padding: 11% 10%;
     color: rgb(231, 234, 241);
+} */
+
+/* Contact Section */
+.contact-section {
+    /* background-color: #2e3554; */
+    padding: 10% 10%;
+    color: rgb(248, 249, 251);
+    text-align-last: auto;
+    padding-bottom: auto;
+}
+.ftr {
+    background-color: #2e3554;
+    background: linear-gradient(to left, #2e3554 10%, #21263c);
+    text-align-last: center;
+    padding-bottom: 0.8em;
+}
+
+.lxi {
+    /* text-align-last: center; */
+    color: rgb(231, 231, 233);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .badge-bolder {
@@ -90,4 +111,9 @@ a {
     .subt {
         margin-left: 0;
     }
+    .contact-section {
+        /* background-color: #2e3554; */
+        padding: 13% 10%;
+    }
+
 }
